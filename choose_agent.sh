@@ -22,7 +22,8 @@ echo "${red}🤖 11. Coderabbit${reset}"
 echo "${red}🤖 12. Droid${reset}"
 echo "${red}🤖 13. Grok${reset}"
 echo "${red}🤖 14. Kimi${reset}"
-echo "${white}🚪 15. Exit${reset}"
+echo "${red}🤖 15. Qoder${reset}"
+echo "${white}🚪 16. Exit${reset}"
 
 read -p "Enter choice: " choice
 
@@ -84,6 +85,10 @@ case $choice in
         kimi
         ;;
     15)
+        echo "Running Qoder..."
+        qodercli
+        ;;
+    16)
         echo "Exiting..."
         exit 0
         ;;
