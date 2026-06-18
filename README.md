@@ -1,67 +1,43 @@
 # CLI Agents Chooser
 
-Un menu simple et rapide pour lancer l'agent CLI de votre choix.
+![Project icon](icon.png)
 
-```
-┌───────────────────────────────┐
-│   Choose your CLI agent        │
-├───────────────────────────────┤
-│ 1. OpenCode        (free)      │
-│ 2. Gemini CLI      (free)      │
-│ 3. Qwen            (free)      │
-│ 4. Crush           (free)      │
-│ 5. llxprt          (free)      │
-│ 6. Copilot         (freemium)  │
-│ 7. Cursor-agent    (freemium)  │
-│ 8. Kiro-cli        (freemium)  │
-│ 9. Codebuff        (freemium)  │
-│ 10. Codex                      │
-│ 11. Coderabbit                 │
-│ 12. Droid                      │
-│ 13. Grok                       │
-│ 14. Kimi                       │
-│ 15. Exit                       │
-└───────────────────────────────┘
+[🇫🇷 FR](README.md) · [🇬🇧 EN](README_en.md)
+
+✨ Un menu simple et rapide pour lancer l'agent CLI de votre choix.
+
+## ✅ Fonctionnalités
+- Centralisation de vos agents en un seul point d'entrée.
+- Évite de mémoriser toutes les commandes.
+- Fonctionnement en local sans dépendances externes.
+
+## 🧠 Utilisation
+```bash
+./src/choose_agent.sh
 ```
 
-## Pourquoi ce script
-- Centralise vos agents en un seul point d'entree
-- Evite de retenir toutes les commandes
-- Fonctionne en local sans dependances
+## ⚙️ Réglages
+Ouvrez `src/choose_agent.sh` pour modifier :
+- Le texte du menu.
+- Les commandes lancées.
+- Les couleurs.
 
-## Installation
-```
-chmod +x choose_agent.sh
-```
-
-Optionnel : ajoutez un alias dans votre shell.
-```
-alias agent="~/Documents/GitHub/APPS/CLI_agentschooser/choose_agent.sh"
+## 🧾 Commandes
+Lancez le script directement dans votre terminal. Un alias est recommandé :
+```bash
+alias agent="~/Documents/GitHub/PROJECTS/CLI_Agentschooser/src/choose_agent.sh"
 ```
 
-## Utilisation
-```
-./choose_agent.sh
-```
+## 📦 Build & Package
+Pas de build requis. Les versions prêtes à l'emploi sont dans `/release`.
 
-## Comment ca marche
-Le script affiche un menu colore, lit votre choix, puis lance la commande
-correspondante si elle existe dans votre PATH.
-
-```
-Votre choix -> execution -> agent demarre
+## 🧪 Installation
+```bash
+chmod +x src/choose_agent.sh
 ```
 
-## Prerequis
-- bash
-- chaque agent installe et disponible dans votre PATH
+## 🧾 Changelog
+- 1.0.0 : Initial release.
 
-## Personnalisation rapide
-Ouvrez `choose_agent.sh` et modifiez :
-- le texte du menu
-- les commandes lancees
-- les couleurs
-
-## Notes
-Si une commande n'existe pas, le shell affichera une erreur. Installez
-l'agent concerne ou adaptez le script.
+## 🔗 Liens
+- [🇬🇧 EN README](README_en.md)
